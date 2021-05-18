@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--    用于显示查询数据库记录详细日志-->
+    <!--    详见：https://blog.csdn.net/lgl782519197/article/details/109275096-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+
+
+    <!--    只有配置了 mappers 信息后，MyBatis 才知道去哪里加载 Mapper 映射文件，
+            在日常开发中，可以根据项目中 Mapper 的配置偏好，选择整合配置文件的配置方式。-->
+    <!--    详见：https://blog.csdn.net/fageweiketang/article/details/80835733-->
+    <mappers>
+        <mapper class="com.mapper.BookMapper"/>
+    </mappers>
+
+</configuration>
